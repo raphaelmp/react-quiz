@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class QuizComponent extends React.Component {
+class QuizComponent extends Component {
   constructor() {
     super()
     this.state = {
@@ -21,6 +21,8 @@ class QuizComponent extends React.Component {
           city: obj.cityLabel
         }
         list.push(pair)
+        
+        return true;
       });
       
       this.setState({
@@ -34,7 +36,8 @@ class QuizComponent extends React.Component {
     return (
       <div className="questionContainer">
         <div className="questionBox">
-          <p>{this.state.currentQuestion}</p>
+          <p className="questionText">Quelle est la ville la plus peuplée de </p>
+          <p>{this.state.currentQuestion ? this.state.currentQuestion : "Chargement en cours..."}</p>
         </div>
         <div className="answerBox">
         </div>
