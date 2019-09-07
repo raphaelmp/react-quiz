@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import QuizLoaderListItem from './ViewComponents/QuizLoaderListItem';
 
 class QuizLoader extends Component {
   constructor() {
@@ -21,7 +22,7 @@ class QuizLoader extends Component {
     let dataPoints = (
       this.state.quizArray ?
        this.state.quizArray.map(
-         item => <p>{item.name}</p>
+         item => <QuizLoaderListItem key={item.id} item={item} />
        )
        : 'niet')
 
