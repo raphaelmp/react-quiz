@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Quiz: Les capitales les plus peuplées des pays du monde</h1>
+        <h1>ReactQuiz</h1>
+        <p>Engin de quiz plutôt versatile</p>
       </header>
       <QuizComponent />
     </div>

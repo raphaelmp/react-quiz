@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Additions et multiplications",
+    "author":"example-data",
+    "url": "http://localhost:3000/additions.json",
+    "description": "Petite pratique des additions et des soustractions"
+  },
+  {
+    "name": "Les pays et leurs capitales",
+    "author":"example-data",
+    "url": "http://localhost:3000/pays.json",
+    "description": ""
+  },
+  {
+    "name": "Dirigeants mondiaux",
+    "author":"example-data",
+    "url": "http://localhost:3000/dirigeants.json",
+    "description": ""
+  },
+  {
+    "name": "Littérature",
+    "author":"example-data",
+    "url": "http://localhost:3000/litterature.json",
+    "description": ""
+  }
+]

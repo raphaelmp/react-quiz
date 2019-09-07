@@ -10,7 +10,7 @@
 .App h1 {
 }
 
-.questionBox {
+.questionBox, .quizLoader {
   background-color: whitesmoke;
   padding: 10px;
   moz-border-radius: 4px;
