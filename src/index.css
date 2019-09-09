@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.quizLoaderListItem:hover {
+  background-color: lightblue;
+  color: darkblue;
+  cursor: pointer;
+}
