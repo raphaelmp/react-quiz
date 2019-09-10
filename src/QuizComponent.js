@@ -36,8 +36,9 @@ class QuizComponent extends Component {
 
   dataLoader(data){
     this.setState({
-      dataSet: {data},
+      dataSet: data,
     })
+    console.log(this.state)
   }
 
   render() {

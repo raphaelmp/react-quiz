@@ -21,12 +21,26 @@ class QuizLoader extends Component {
   }
 
   fetchSet(t) {
+    fetch(t)
+    .then(response => response.json())
+    .then(response => {
+      let list = [];
 
-    let exData = {
-      'pee':'wee',
-    }
+      response.map(obj => {
+        let pair = {
+          country: obj.countryLabel,
+          city: obj.cityLabel
+        }
+        list.push(pair)
 
-    this.props.dataLoader(exData);
+        return true;
+      });
+
+      this.props.dataLoader(list)
+    })
+    .catch(function(error) {
+      console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
+    });
   }
 
   render() {

@@ -10,7 +10,7 @@
     "id": 2,
     "name": "Les pays et leurs capitales",
     "author":"example-data",
-    "url": "http://localhost:3000/pays.json",
+    "url": "http://localhost:3000/payspop.json",
     "description": ""
   },
   {
