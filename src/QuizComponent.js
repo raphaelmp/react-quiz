@@ -5,8 +5,10 @@ class QuizComponent extends Component {
   constructor() {
     super()
     this.state = {
-      dataSetLoaded: false,
+      dataSet: "",
     }
+
+    this.dataLoader = this.dataLoader.bind(this);
   }
 
   componentDidMount() {
@@ -32,8 +34,14 @@ class QuizComponent extends Component {
     })
   }
 
+  dataLoader(data){
+    this.setState({
+      dataSet: {data},
+    })
+  }
+
   render() {
-    if (this.state.dataSetLoaded) {
+    if (this.state.dataSet) {
       return (
         <div className="questionContainer">
           <div className="questionBox">
@@ -46,7 +54,7 @@ class QuizComponent extends Component {
       )
     } else  {
       return (
-        <QuizLoader />
+        <QuizLoader dataLoader={this.dataLoader}/>
       )
     }
 

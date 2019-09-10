@@ -7,6 +7,8 @@ class QuizLoader extends Component {
     this.state = {
       quizArray: "",
     }
+
+    this.fetchSet = this.fetchSet.bind(this);
   }
 
   componentDidMount() {
@@ -18,11 +20,20 @@ class QuizLoader extends Component {
     })
   }
 
+  fetchSet(t) {
+
+    let exData = {
+      'pee':'wee',
+    }
+
+    this.props.dataLoader(exData);
+  }
+
   render() {
     let dataPoints = (
       this.state.quizArray ?
        this.state.quizArray.map(
-         item => <QuizLoaderListItem key={item.id} item={item} />
+         item => <QuizLoaderListItem key={item.id} item={item} fetchSet={this.fetchSet}/>
        )
        : 'niet')
 
