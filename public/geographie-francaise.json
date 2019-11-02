@@ -1,0 +1,18 @@
+{
+  "id": "Geographie française",
+  "author": "Raphaël M-P",
+  "questions" : [
+    {
+      "id": 1,
+      "type": "map",
+      "question": "Où est située la Haute-Savoie?",
+      "answer": "Haute-Savoie"
+    },
+    {
+      "id": 2,
+      "type": "map",
+      "question": "Où est située la Savoie?",
+      "answer":"Savoie"
+    }
+  ]
+}

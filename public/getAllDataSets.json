@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Additions et multiplications",
+    "name": "Géographie française",
     "author":"example-data",
-    "url": "http://localhost:3000/additions.json",
-    "description": "Petite pratique des additions et des soustractions"
+    "url": "http://localhost:3000/geographie-francaise.json",
+    "description": "Un quiz sur les régions et les départements de la France métropolitaine."
   },
   {
     "id": 2,
